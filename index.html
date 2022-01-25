@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shelovescyber</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+        color: #fff;
+        width: 97vw;
+        height: 97vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .circle {
+        width: 50px;
+        height: 50px;
+        /* background-color: #d15e386b; */
+        border: solid #d15e386b;
+        position: absolute;
+        border-radius: 50px;
+        animation: pop-in 1s;
+      }
+
+      @keyframes pop-in {
+        0% {
+          opacity: 0;
+          transform: scale(0.5);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        height: 500px;
+        background-color: #3d1d73;
+        font-weight: 700;
+        border-radius: 20px;
+      }
+      .container_under {
+        z-index: -2;
+        width: 500px;
+        height: 5px;
+        background-color: #d15e38;
+      }
+      .heading {
+      }
+      .separator {
+        width: 400px;
+        height: 1.5px;
+        background-color: #fff;
+      }
+      .logo {
+        width: 60px;
+        height: 60px;
+      }
+      .red {
+        color: #d15e38;
+      }
+      @media only screen and (max-width: 600px) {
+        .container {
+          width: 250px;
+          height: 250px;
+        }
+        .container_under {
+          height: 2.5px;
+        }
+        .heading {
+          font-size: small;
+        }
+        .footer {
+          font-size: x-small;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="logo" src="logo.png" alt="" />
+      <h2 class="heading">
+        hello, welcome to sheloves<span class="red">cyber</span>
+      </h2>
+      <div class="separator"></div>
+      <p class="footer">coming soon</p>
+    </div>
+  </body>
+  <script>
+    window.addEventListener("load", (event) => {
+      setInterval(
+        document.addEventListener("mousemove", (e) => {
+          console.log(e.screenX, Math.random() * e.screenX);
+          div = document.createElement("div");
+          div.className = "circle";
+          console.log(div.style);
+          div.style.left = `${Math.random() * e.screenX}px `;
+          div.style.top = `${Math.random() * e.screenY}px`;
+          // document.querySelector("body").appendChild(div);
+          document.querySelector("body").appendChild(div);
+        }),
+        50000
+      );
+    });
+  </script>
+</html>
