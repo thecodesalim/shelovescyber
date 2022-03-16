@@ -23,7 +23,7 @@ export default function Home() {
                   Creating awareness about cybersecurity and the internet
                 </p>
                 <Link href="blog">
-                  <button class="bg-indigo-700 hover:bg-indigo-500 text-white font-normal py-2 px-4">
+                  <button className="bg-indigo-700 hover:bg-indigo-500 text-white font-normal py-2 px-4">
                     Read our blog
                   </button>
                 </Link>
