@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export default function Blog() {
   return (
-    <div class="flex pt-5 flex-col h-screen w-full">
-      <div class="flex grow pl-10 pr-10 flex-col">
-        <nav class="flex justify-end w-full">
-          <ul class="flex gap-10">
+    <div className="flex pt-5 flex-col h-screen w-full">
+      <div className="flex grow pl-10 pr-10 flex-col">
+        <nav className="flex justify-end w-full">
+          <ul className="flex gap-10">
             <li>Blog</li>
             <li>About us</li>
             <li>Resources</li>
