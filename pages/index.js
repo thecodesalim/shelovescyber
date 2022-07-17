@@ -5,10 +5,10 @@ import Layout from "../components/Layout";
 export default function Home() {
   return (
     <Layout>
-      <div className="pt-24">
-        <div className="flex grow pl-10 pr-10 flex-col">
+      <div className="pt-5">
+        <div className="flex grow p-2 flex-col">
           <div className="pt-24 self-center">
-            <div className="h-64 pt-10 pl-10 pr-10 max-w-screen-md border-2 border-indigo-700 shadow-[10px_10px_0px_5px_rgba(0,0,0,1)]">
+            <div className="h-64 pt-2 pl-2 pr-2 max-w-screen-md border-2 border-indigo-700 shadow-[10px_10px_0px_5px_rgba(0,0,0,1)]">
               <p className="text-xl pl-1 pe-1 bg-slate-200 mb-3">
                 Information Security at Nigerian Bulk Electricity Trading.
               </p>
