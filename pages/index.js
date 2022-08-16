@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { BsSpotify, BsInstagram } from "react-icons/bs";
 import Layout from "../components/Layout";
+import { getBlogs } from "../lib/notion";
 
-export default function Home() {
+export default function Home({ posts }) {
+  console.log(posts.properties.Link.rich_text);
   return (
     <Layout>
       <div className="pt-5">
@@ -10,10 +12,13 @@ export default function Home() {
           <div className="pt-24 self-center">
             <div className="h-64 pt-2 pl-2 pr-2 max-w-screen-md border-2 border-indigo-700 shadow-[10px_10px_0px_5px_rgba(0,0,0,1)]">
               <p className="text-xl pl-1 pe-1 bg-slate-200 mb-3">
-                Information Security at Nigerian Bulk Electricity Trading.
+                Fatimah Adelodun
               </p>
-              <p className="text-xl pl-1 pe-1 bg-slate-200 ">
-                I share cybersecurity tips, tech news and career tips.
+              <p className="text-xl pl-1 pe-1 bg-slate-200 mb-3">
+                Information Security Expert
+              </p>
+              <p className="text-xl pl-1 pe-1 bg-slate-200 mb-3">
+                I share cybersecurity tips and record podcasts
               </p>
               {/* <Link href="blog">
                 <button className="bg-indigo-700 hover:bg-indigo-500 text-white font-normal py-2 px-4">
@@ -34,4 +39,16 @@ export default function Home() {
       </div>
     </Layout>
   );
+}
+
+export async function getServerSideProps() {
+  // Get the posts
+  let results = await getBlogs();
+  //console.log(results, "result");
+  // Return the result
+  return {
+    props: {
+      posts: results,
+    },
+  };
 }
