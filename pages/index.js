@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { BsSpotify, BsInstagram } from "react-icons/bs";
 import Layout from "../components/Layout";
-import { getBlogs } from "../lib/notion";
 
 export default function Home({ posts }) {
   console.log(posts);
@@ -39,16 +38,4 @@ export default function Home({ posts }) {
       </div>
     </Layout>
   );
-}
-
-export async function getServerSideProps() {
-  // Get the posts
-  let results = await getBlogs();
-  //console.log(results, "result");
-  // Return the result
-  return {
-    props: {
-      posts: results,
-    },
-  };
 }
