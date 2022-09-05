@@ -3,7 +3,6 @@ import { BsSpotify, BsInstagram } from "react-icons/bs";
 import Layout from "../components/Layout";
 
 export default function Home({ posts }) {
-  console.log(posts);
   return (
     <Layout>
       <div className="pt-5">
