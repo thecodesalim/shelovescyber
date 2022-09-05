@@ -7,8 +7,8 @@ export default function Layout({ children }) {
         <nav className="flex justify-end w-full">
           <ul className=" gap-5 text-gray-400 text-sm laptop:flex">
             <li>
-              <Link href="blog">
-                <a>BLOG</a>
+              <Link href="/">
+                <a>HOME</a>
               </Link>
             </li>
             <li>
@@ -17,12 +17,15 @@ export default function Layout({ children }) {
               </Link>
             </li>
             <li>
+              <Link href="blog">
+                <a>BLOG</a>
+              </Link>
+            </li>
+            <li>
               <Link href="enquiry">
                 <a>ENQUIRY</a>
               </Link>
             </li>
-            <li>RESOURCES</li>
-            <li>ABOUT US</li>
           </ul>
         </nav>
         {children}
