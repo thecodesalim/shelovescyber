@@ -21,8 +21,6 @@ export default function Layout({ children }) {
                 <a>ENQUIRY</a>
               </Link>
             </li>
-            <li>RESOURCES</li>
-            <li>ABOUT US</li>
           </ul>
         </nav>
         {children}
