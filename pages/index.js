@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import { getBlogs } from "../lib/notion";
 
 export default function Home({ posts }) {
-  console.log(posts.properties);
+  console.log(posts);
   return (
     <Layout>
       <div className="pt-5">
