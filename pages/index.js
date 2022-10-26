@@ -25,12 +25,15 @@ export default function Home({ posts }) {
                 </button>
               </Link> */}
               <div className=" flex justify-center gap-3 mt-3">
-                <Link href="https://www.instagram.com/shelovescyber/">
+                {/* <Link
+                  href="https://www.instagram.com/shelovescyber/"
+                  passHref={true}
+                >
                   <BsInstagram size={30} />
                 </Link>
-                <Link href="https://www.spotify.com/">
+                <Link href="https://www.spotify.com/" passHref={true}>
                   <BsSpotify size={30} />
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

@@ -12,17 +12,17 @@ export default function Layout({ children }) {
               </Link>
             </li>
             <li>
-              <Link href="podcast">
+              <Link href="/podcast">
                 <a>PODCAST</a>
               </Link>
             </li>
             <li>
-              <Link href="blog">
+              <Link href="/blog">
                 <a>BLOG</a>
               </Link>
             </li>
             <li>
-              <Link href="enquiry">
+              <Link href="/enquiry">
                 <a>ENQUIRY</a>
               </Link>
             </li>

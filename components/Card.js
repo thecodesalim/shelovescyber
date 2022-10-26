@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 export const Card = ({ guest, link }) => {
   return (
-    <Link href={link}>
+    <Link href={link} passHref={true}>
       <div className=" w-96 h-52 bg-slate-100 rounded-md p-5 mb-5 cursor-pointer">
         <div className="flex ">
           <Image
