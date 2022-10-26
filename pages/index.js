@@ -2,8 +2,7 @@ import Link from "next/link";
 import { BsSpotify, BsInstagram } from "react-icons/bs";
 import Layout from "../components/Layout";
 
-export default function Home({ posts }) {
-  console.log(posts);
+export default function Home() {
   return (
     <Layout>
       <div className="pt-5">
@@ -25,12 +24,15 @@ export default function Home({ posts }) {
                 </button>
               </Link> */}
               <div className=" flex justify-center gap-3 mt-3">
-                <Link href="https://www.instagram.com/shelovescyber/">
+                {/* <Link
+                  href="https://www.instagram.com/shelovescyber/"
+                  passHref={true}
+                >
                   <BsInstagram size={30} />
                 </Link>
-                <Link href="https://www.spotify.com/">
+                <Link href="https://www.spotify.com/" passHref={true}>
                   <BsSpotify size={30} />
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
