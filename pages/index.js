@@ -2,8 +2,7 @@ import Link from "next/link";
 import { BsSpotify, BsInstagram } from "react-icons/bs";
 import Layout from "../components/Layout";
 
-export default function Home({ posts }) {
-  console.log(posts);
+export default function Home() {
   return (
     <Layout>
       <div className="pt-5">
