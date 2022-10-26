@@ -18,13 +18,8 @@ export default function Home() {
               <p className="text-xl pl-1 pe-1 bg-slate-200 mb-3">
                 I share cybersecurity tips and record podcasts
               </p>
-              {/* <Link href="blog">
-                <button className="bg-indigo-700 hover:bg-indigo-500 text-white font-normal py-2 px-4">
-                  Read our blog
-                </button>
-              </Link> */}
               <div className=" flex justify-center gap-3 mt-3">
-                {/* <Link
+                <Link
                   href="https://www.instagram.com/shelovescyber/"
                   passHref={true}
                 >
@@ -32,7 +27,7 @@ export default function Home() {
                 </Link>
                 <Link href="https://www.spotify.com/" passHref={true}>
                   <BsSpotify size={30} />
-                </Link> */}
+                </Link>
               </div>
             </div>
           </div>
